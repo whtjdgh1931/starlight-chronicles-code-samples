@@ -1,14 +1,14 @@
 # Starlight Chronicles
 
-[C# 소스 (300개)](Source/Assets) · [Unity 데모](UnityDemo) · [실행 방법](#unity-데모-실행)
+[C# 소스 (300개)](Source/Assets) · [게임 실행](#게임-실행) · [Unity 데모 실행](#unity-데모-실행)
 
-공개 소스는 원본의 게임 C# 파일을 폴더 구조와 함께 담았습니다. 운영 시트 식별자가 들어간 Editor 업로더는 제외했습니다. 게임 소스는 구현 열람용입니다. 실행은 독립 데모에서 확인할 수 있습니다.
+공개 소스는 원본의 게임 C# 파일을 폴더 구조와 함께 담았습니다. 운영 시트 식별자가 들어간 Editor 업로더는 제외했습니다. 공개 C# 소스에서 구현을 살펴보고, 게임 빌드와 Unity 데모를 각각 실행할 수 있습니다.
 
 **조성호 · Unity / C# 기반 Windows 2D 액션 RPG · 1인 개발**
 
 몬스터를 사냥해 얻은 장비로 캐릭터를 성장시키고, 혼자 또는 다른 플레이어와 보스전에 도전하는 게임입니다. 캐릭터와 전투, 외부 서비스 연동, 저장 복구, 개발용 검증 도구를 구현했습니다. 메이플스토리의 이동과 성장 구조를 참고해 시작한 학습 프로젝트이며, 저장소 이름은 `copyMaplestory`입니다.
 
-[핵심 구현](#핵심-구현) · [AI 활용과 검증 도구](#ai-활용과-검증-도구) · [검증 기록](#검증-기록) · [실행 방법](#unity-데모-실행)
+[핵심 구현](#핵심-구현) · [AI 활용과 검증 도구](#ai-활용과-검증-도구) · [검증 기록](#검증-기록)
 
 
 | 항목 | 내용 |
@@ -16,6 +16,17 @@
 | 개발 기간 | 2026.05.22 ~ 진행 중 (저장소 최초 커밋 기준) |
 | 개발 환경 | Unity 6000.4.8f1 · C# · Windows PC |
 | 문서 기준 | 2026.11.22 · `network` 브랜치 · `0a9fe0f` |
+
+## 게임 실행
+
+[Windows ZIP 다운로드](https://github.com/whtjdgh1931/starlight-chronicles-code-samples/releases/download/portfolio-demo-v1/Starlight-Chronicles-Windows.zip) · [릴리스 portfolio-demo-v1](https://github.com/whtjdgh1931/starlight-chronicles-code-samples/releases/tag/portfolio-demo-v1)
+
+1. ZIP 파일 전체를 압축 해제합니다.
+2. 압축을 푼 폴더에서 `Starlight Chronicles.exe`를 실행합니다.
+
+외부 리소스와 글꼴 라이선스 고지는 ZIP의 `THIRD-PARTY-NOTICES.txt`를 참고하세요.
+
+[AI 활용 포트폴리오](https://github.com/whtjdgh1931/starlight-chronicles-ai-portfolio)
 
 ## 핵심 구현
 
@@ -62,7 +73,7 @@ Unity Authentication으로 익명 인증한 뒤 Lobby에서 방에 참가하고 
 
 ## Unity 데모 실행
 
-1. 저장소를 내려받은 뒤 Unity Hub에서 `UnityDemo` 폴더를 추가합니다.
+1. 저장소를 내려받은 뒤 Unity Hub에서 [`UnityDemo`](UnityDemo) 폴더를 추가합니다.
 2. Unity **6000.4.8f1**에서 `Assets/Scenes/PortfolioDemo.unity`를 열고 **Play**를 누릅니다.
 3. **Start boss attack**을 누릅니다. 분홍 예고가 위치를 추적하다가 금색으로 바뀌면 공격 경로가 확정됩니다. **Lane** 버튼으로 경로를 벗어나 피할 수 있습니다.
 
